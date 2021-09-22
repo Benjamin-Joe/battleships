@@ -1,9 +1,9 @@
+from random import randint
+
 # Legend
 # X for placing ship and hitting ship
 # ' ' for availiable space
 # '-' for missed
-
-from random import randint
 
 hidden_board = [[' '] *9 for x in range(9)]
 guess_board = [[' '] *9 for x in range(9)]
