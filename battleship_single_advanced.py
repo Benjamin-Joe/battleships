@@ -174,7 +174,7 @@ while True:
         turn(computer_guess_board)
         break
     print_board(computer_guess_board)
-    if count_hit_ships(computer_guess_board) == 17_
-    print("HaHa, You Lose!!")
-    break
+    if count_hit_ships(computer_guess_board) == 17:
+        print("HaHa, You Lose!!")
+        break
 
