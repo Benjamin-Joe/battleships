@@ -159,3 +159,22 @@ print_board(computer_board)
 print_board(player_board)
 place_ships(player_board)
 
+while True:
+    # Player Turn
+    while True:
+        print('Take A Guess: ')
+        print(player_guess_board)
+        turn(player_guess_board)
+        break
+    if count_hit_ships(player_guess_board) == 17:
+        print("Yaay, You Won!!")
+        break
+    # Comp Turn
+    while True:
+        turn(computer_guess_board)
+        break
+    print_board(computer_guess_board)
+    if count_hit_ships(computer_guess_board) == 17_
+    print("HaHa, You Lose!!")
+    break
+
