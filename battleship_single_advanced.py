@@ -153,6 +153,9 @@ def turn(board):
             board[row][column] ="X"
         else:
             board[row][column] = "-"
-
-
+            
+place_ships(computer_board)
+print_board(computer_board)
+print_board(player_board)
+place_ships(player_board)
 
