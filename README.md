@@ -6,6 +6,8 @@
 
 # Battleship_single
 
-# Battleship_single_advanced
+Error need to add try statement, If user inputs nothing, game crashes
+
+# Battleship_against_comå
 
 # Battleship_single_extra

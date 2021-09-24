@@ -45,7 +45,7 @@ def count_hit_ship(board):
     return count
 
 create_ships(hidden_board)
-turns = 10
+turns = 50
 while turns > 0:
     print('Welcome To Battleships')
     print_board(guess_board)
