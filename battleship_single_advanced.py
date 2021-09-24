@@ -38,7 +38,7 @@ def place_ships(board):
                         break
             else:
                 place_ships = True
-                print('place the ship with a length of' + str(ship_length))
+                print('place the ship with a length of  ' + str(ship_length))
                 row, column, orientation = user_input(place_ships)
                 if check_ship_fits(ship_length, row, column, orientation):
                     if check_overlap(board, row, column, orientation, ship_length) == False:
@@ -80,7 +80,7 @@ def user_input(place_ships):
     if place_ships == True:
         while True:
             try:
-                orientation = input("Enter orientation H(orizontal) or V(ertical):").upper()
+                orientation = input("Enter orientation H(orizontal) or V(ertical): ").upper()
                 if orientation == "H" or orientation == "V":
                     break
             except TypeError:
