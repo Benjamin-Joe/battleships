@@ -34,6 +34,9 @@ def get_ship_location():
     while column not in 'ABCDEFGHI':
         print('Please Enter A VALID Letter:  ')
         column = input('Please Enter A Letter A To I_  ').upper()
+except ValueError and KeyError:
+    print("Not VALID input !!")
+    return self.get_user_input()
     return int(row) - 1, letters_to_numbers[column]
 
 def count_hit_ship(board):

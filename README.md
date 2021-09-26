@@ -8,6 +8,8 @@
 
 Error need to add try statement, If user inputs nothing, game crashes
 
-# Battleship_against_comå
+Need to add try statement to all games for empty input.
+
+# Battleship_against_comp
 
 # Battleship_single_extra
