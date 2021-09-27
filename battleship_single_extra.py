@@ -1,6 +1,7 @@
-import random 
+import random
 
 # gameboard
+
 
 class gameboard:
     def __init__(self, board):
@@ -17,7 +18,8 @@ class gameboard:
         for row in self.board:
             print("%d|%s|" % (row_number, "|".join(row)))
             row_number += 1
-            
+
+
 class Battleship:
     def __init__(self, board):
         self.board = board
@@ -46,13 +48,15 @@ class Battleship:
             print("Not VALID input !!")
             return self.get_user_input()
 
+
 def count_hit_ships(self):
     hit_ships = 0
     for row in self.board:
         for column in row:
-            if column =="X":
+            if column == "X":
                 hit_ships += 1
     return hit_ships
+
 
 def PlayGame():
     computer_board = gameboard([[" "] * 9 for i in range(9)])
