@@ -29,3 +29,5 @@ while True:
             print("You lose HAHA!!", Computer, "Beats", Player)
         else:
             print("Winner Woo Hoo!", Player, "Beats", Computer)
+    else:
+        print("That's not a valid input. Try again")
