@@ -5,6 +5,8 @@ import random
 # H = Horizontal
 # length > 9 both ways
 #  Add random for picking number
+# X = ship location and hit
+# - Miss
 length_of_ships = [1, 2, 3, 4, 5]
 player_board = [[" "] * 9 for i in range(9)]
 computer_board = [[" "] * 9 for i in range(9)]
