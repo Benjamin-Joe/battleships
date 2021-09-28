@@ -73,7 +73,7 @@ def PlayGame():
 
         if computer_board.board[user_x_row][user_y_column] == "X":
             print("You sunk one of my ships!!")
-            user_guess.board[user_x_row][user_y_column] = "X":
+            user_guess.board[user_x_row][user_y_column] = "X"
         else:
             print("Ha, You Mised Me!!")
             user_guess.board[user_x_row][user_y_column] = "-"
