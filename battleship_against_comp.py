@@ -167,7 +167,7 @@ while True:
     # Player Turn
     while True:
         print('Take A Guess: ')
-        print(player_guess_board)
+        print_board(player_guess_board)
         turn(player_guess_board)
         break
     if count_hit_ships(player_guess_board) == 17:
