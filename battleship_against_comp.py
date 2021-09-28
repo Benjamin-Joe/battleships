@@ -7,7 +7,7 @@ import random
 #  Add random for picking number
 # X = ship location and hit
 # - Miss
-length_of_ships = [1, 2, 3, 4, 5]
+length_of_ships = [ 2, 3, 3, 4, 5]
 player_board = [[" "] * 9 for i in range(9)]
 computer_board = [[" "] * 9 for i in range(9)]
 player_guess_board = [[" "] * 9 for i in range(9)]
@@ -110,7 +110,7 @@ def user_input(place_ships):
     else:
         while True:
             try:
-                row = input("Enter the row 1-9 of the ship:")
+                row = input("Enter the row 1-9 of the ship: ")
                 if row in '123456789':
                     row = int(row) - 1
                     break
@@ -160,7 +160,6 @@ def turn(board):
 
 
 place_ships(computer_board)
-print_board(computer_board)
 print_board(player_board)
 place_ships(player_board)
 
@@ -168,7 +167,8 @@ place_ships(player_board)
 while True:
     # Player Turn
     while True:
-        print('Take A Guess: ')
+        print('Your Guesses Are Recorded Bellow ')
+        print(' X Means Hit, - Means Miss. Good Luck!')
         print_board(player_guess_board)
         turn(player_guess_board)
         break

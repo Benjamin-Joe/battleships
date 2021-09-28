@@ -1,4 +1,4 @@
-import random
+from random import randint
 # orientation
 # V = Vertical
 # H = Horizontal
@@ -23,15 +23,17 @@ def print_board(board):
     for row in board:
         print("%d|%s|" % (row_number, "|".join(row)))
         row_number += 1
-print_board(player_board)
 
 
 def place_ships(board):
-    pass
+    for ship_length in length_of_ships:
+        while True:
+            if board == computer_board:
+                orientation, row, column = random.choice(["H", "V"]), random.randint(0, 8), random.randint(0, 8)
+                if check_ship_fits(ship_length, row, column, orientation):
+                    if check_overlap(board, row, column, orientation) == False:
 
 
-def check_ship_fits():
-    pass
 
 
 def check_overlap():
