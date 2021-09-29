@@ -7,7 +7,7 @@ import random
 #  Add random for picking number
 # X = ship location and hit
 # - Miss
-length_of_ships = [ 2, 3, 3, 4, 5]
+length_of_ships = [2, 3, 3, 4, 5]
 player_board = [[" "] * 9 for i in range(9)]
 computer_board = [[" "] * 9 for i in range(9)]
 player_guess_board = [[" "] * 9 for i in range(9)]
@@ -15,6 +15,7 @@ computer_guess_board = [[" "] * 9 for i in range(9)]
 letters_to_numbers = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8}
 
 
+# Creating and printing the generic game board
 def print_board(board):
     print("  A B C D E F G H I")
     print("  +-+-+-+-+-+-+-+-+")
@@ -24,6 +25,7 @@ def print_board(board):
         row_number += 1
 
 
+# Randomly placing computer ships on board. Allowing user to chose location of their ships
 def place_ships(board):
     # loop through length of ships
     for ship_length in length_of_ships:
@@ -56,6 +58,7 @@ def place_ships(board):
                         break
 
 
+# Checking that the ship user places fits on game board
 def check_ship_fits(ship_length, row, column, orientation):
     if orientation == "H":
         if column + ship_length > 9:
@@ -69,6 +72,7 @@ def check_ship_fits(ship_length, row, column, orientation):
             return True
 
 
+# Checking ships aren't placed ontop of one another
 def check_overlap(board, row, column, orientation, ship_length):
     if orientation == "H":
         for i in range(column, column + ship_length):
@@ -81,6 +85,7 @@ def check_overlap(board, row, column, orientation, ship_length):
     return False
 
 
+# Reading user input
 def user_input(place_ships):
     if place_ships == True:
         while True:
@@ -127,6 +132,7 @@ def user_input(place_ships):
         return row, column
 
 
+# Counter for hit ships
 def count_hit_ships(board):
     count = 0
     for row in board:
@@ -136,6 +142,7 @@ def count_hit_ships(board):
     return count
 
 
+# Creating ability to show player and computer moves
 def turn(board):
     if board == player_guess_board:
         row, column = user_input(player_guess_board)
@@ -159,6 +166,7 @@ def turn(board):
             board[row][column] = "-"
 
 
+# Playing the game
 place_ships(computer_board)
 print_board(player_board)
 place_ships(player_board)
@@ -168,7 +176,7 @@ while True:
     # Player Turn
     while True:
         print('Your Guesses Are Recorded Bellow ')
-        print(' X Means Hit, - Means Miss. Good Luck!')
+        print('X Means Hit, - Means Miss. Good Luck!')
         print_board(player_guess_board)
         turn(player_guess_board)
         break

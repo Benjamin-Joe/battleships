@@ -11,6 +11,7 @@ guess_board = [[' '] * 9 for x in range(9)]
 letters_to_numbers = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8}
 
 
+# Creating the board
 def print_board(board):
     print('  A B C D E F G H I')
     print('  -----------------')
@@ -20,6 +21,7 @@ def print_board(board):
         row_number += 1
 
 
+# Creating the ships
 def create_ships(board):
     for ship in range(5):
         ship_row, ship_column = randint(0, 8), randint(0, 8)
@@ -28,6 +30,7 @@ def create_ships(board):
         board[ship_row][ship_column] = 'X'
 
 
+# Guessing ship locations
 def get_ship_location():
     row = input('Please Enter A Ship Row 1-9:  ')
     while row not in '123456789':
@@ -40,6 +43,7 @@ def get_ship_location():
     return int(row) - 1, letters_to_numbers[column]
 
 
+# Counting how many ships users hit
 def count_hit_ship(board):
     count = 0
     for row in board:
@@ -49,6 +53,7 @@ def count_hit_ship(board):
     return count
 
 
+# Starting game and adding text for user understanding
 if __name__ == "__main__":
     create_ships(hidden_board)
     turns = 50
