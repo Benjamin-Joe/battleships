@@ -26,6 +26,8 @@ Battleships Minature Version: <br>
 ![image](https://user-images.githubusercontent.com/83606095/135178117-f4e1904f-5163-49fc-9293-3837529621d8.png) <br>
 Main Battleships Game: <br>
 ![image](https://user-images.githubusercontent.com/83606095/135178188-658cfe82-e514-46a9-9f93-223efd2b56b1.png) <br>
+Image of pep8 code check
+![image](https://user-images.githubusercontent.com/83606095/135309279-f0bcdc54-8885-4380-ae93-43b98827ddac.png) <br>
 
 ### Battleships
 There are two battleships games in this project. The first (battleship_single.py) was made as a refresher for me to get back into working with python. The objective is simple. The computer had hidden 5 single space ships on a 9 by 9 grid. The player's job is to find them all within 50 turns. <br>
@@ -37,7 +39,12 @@ Rock Paper Scissors was another mini project, It is player v computer, The compu
 The battleship_single.py was made as a mini game, it has already been described above.
 
 ### Issues
-Of all the issues encountered during the creation of the project, the only one I haven't fixed is an issue with the mini version of battleships. If a user doesn't chose a space and instead leaves the guess field blank, It will cause the game to crash. I haven't fixed it as it was a test for the main project battleship_against_comp.py.
+Of all the issues encountered during the creation of the project, the only one I haven't fixed is an issue with the mini version of battleships. If a user doesn't chose a space and instead leaves the guess field blank, It will cause the game to crash. I haven't fixed it as it was a test for the main project battleship_against_comp.py. <br>
+On lines 38, 51 and 81 An error shows as below. I tried to correct it with 'if code is True' statement but it came back invalid syntax.
+<br> comparison to True should be 'if cond is True:' or 'if cond:'
+<br> comparison to False should be 'if cond is False:' or 'if not cond:'
+<br>
+The only other issues to my knowlage are lines being too long. I haven't changed them as I don't think it causes any issues to the program
 
 ### Other
 As stated several times, the main file is the battleship_against_comp.py. All other files are refreshers for me. <br>

@@ -25,7 +25,8 @@ def print_board(board):
         row_number += 1
 
 
-# Randomly placing computer ships on board. Allowing user to chose location of their ships
+# Randomly placing computer ships on board.
+# Allowing user to chose location of their ships
 def place_ships(board):
     # loop through length of ships
     for ship_length in length_of_ships:
