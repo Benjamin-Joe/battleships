@@ -42,4 +42,5 @@ Of all the issues encountered during the creation of the project, the only one I
 ### Other
 As stated several times, the main file is the battleship_against_comp.py. All other files are refreshers for me. <br>
 I would like to thank my mentor Antonio Rodriquez for helping oversee the project.
+<br> In this project there is a install for bs4. This install was going to be used in another mini project. It currently remains unused for now.
 
