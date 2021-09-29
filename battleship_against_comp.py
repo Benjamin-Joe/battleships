@@ -90,14 +90,14 @@ def user_input(place_ships):
     if place_ships == True:
         while True:
             try:
-                orientation = input("Enter orientation H(orizontal) or V(ertical): ").upper()
+                orientation = input("Enter orientation H(orizontal) or V(ertical):\n ").upper()
                 if orientation == "H" or orientation == "V":
                     break
             except TypeError:
                 print('Enter a VALID orientation H or V')
         while True:
             try:
-                row = input("Enter the row 1-9 of the ship: ")
+                row = input("Enter the row 1-9 of the ship:\n ")
                 if row in '123456789':
                     row = int(row) - 1
                     break
@@ -105,7 +105,7 @@ def user_input(place_ships):
                 print('Enter a VALID number between 1 and 9')
         while True:
             try:
-                column = input("Enter the column of the ship: ").upper()
+                column = input("Enter the column of the ship:\n ").upper()
                 if column in 'ABCDEFGHI':
                     column = letters_to_numbers[column]
                     break
@@ -115,7 +115,7 @@ def user_input(place_ships):
     else:
         while True:
             try:
-                row = input("Enter the row 1-9 of the ship: ")
+                row = input("Enter the row 1-9 of the ship:\n ")
                 if row in '123456789':
                     row = int(row) - 1
                     break
@@ -123,7 +123,7 @@ def user_input(place_ships):
                 print('Enter a VALID number between 1-9')
         while True:
             try:
-                column = input("Enter the column of the ship: ").upper()
+                column = input("Enter the column of the ship:\n ").upper()
                 if column in 'ABCDEFGHI':
                     column = letters_to_numbers[column]
                     break

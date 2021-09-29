@@ -8,7 +8,7 @@ Choices = ["ROCK", "PAPER", "SCISSORS"]
 
 while True:
     Computer = Choices[randint(0, 2)]
-    Player = input("Pick Rock, Paper, Or Scissors Or Press X To Quit:  ").upper()
+    Player = input("Pick Rock, Paper, Or Scissors Or Press X To Quit: \n ").upper()
     if Player == "X":
         print("Game Ended")
         break

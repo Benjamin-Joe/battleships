@@ -32,14 +32,14 @@ def create_ships(board):
 
 # Guessing ship locations
 def get_ship_location():
-    row = input('Please Enter A Ship Row 1-9:  ')
+    row = input('Please Enter A Ship Row 1-9: \n  ')
     while row not in '123456789':
-        print('Please Enter A VALID ROW:  ')
-        row = input('Please Enter A Ship Row 1-9:  ')
-    column = input('Please Enter A Letter A To I:  ').upper()
+        print('Please Enter A VALID ROW: ')
+        row = input('Please Enter A Ship Row 1-9:  \n')
+    column = input('Please Enter A Letter A To I:  \n').upper()
     while column not in 'ABCDEFGHI':
-        print('Please Enter A VALID Letter:  ')
-        column = input('Please Enter A Letter A To I:  ').upper()
+        print('Please Enter A VALID Letter:  )
+        column = input('Please Enter A Letter A To I: \n ').upper()
     return int(row) - 1, letters_to_numbers[column]
 
 
