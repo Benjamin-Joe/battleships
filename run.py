@@ -94,7 +94,7 @@ def user_input(place_ships):
                 orientation = input("Enter orientation H(orizontal) or V(ertical):\n ").upper()
                 if orientation == "H" or orientation == "V":
                     break
-            except TypeError:
+            except KeyError:
                 print('Enter a VALID orientation H or V')
         while True:
             try:
